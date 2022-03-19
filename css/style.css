@@ -1,0 +1,103 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #000;
+  background-color: #fbf2e9;
+}
+
+.hidden {
+  display: none;
+}
+
+#movieList .col .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 2vh;
+  margin: 1vh;
+  border: 1px solid #bbb;
+  border-radius: 4%;
+}
+
+#movieList .col .cont img {
+  height: 25vh;
+  margin-right: 1vh;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+#movieList .col .cont .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#movieList .col .cont .info p:nth-child(1) {
+  font-size: small;
+}
+
+#movieList .col .cont .info p:nth-child(2) {
+  font-weight: bold;
+}
+
+#movieList .col .cont .info p:nth-child(3) {
+  font-size: large;
+}
+
+.darkener {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: #00000077;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.coolModal {
+  padding: 4vh;
+  text-align: center;
+  background-color: #fbf2e9;
+  z-index: 3;
+  position: fixed;
+  top: -100vh;
+  left: 20vw;
+  width: 60vw;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.coolModal.load {
+  top: 10vh;
+}
+
+.coolModal button {
+  width: 80%;
+}
+
+#id1337 .row {
+  margin-bottom: 2vh;
+}
+
+#detailedImage {
+  height: 50vh;
+}
+
+#modalInfo {
+  margin-bottom: 2vh;
+}

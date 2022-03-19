@@ -1,0 +1,70 @@
+@import "scss/def-settings";
+
+#movieList .col .cont {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    padding: 2vh;
+    margin: 1vh;
+    border: 1px solid #bbb;
+    border-radius: 4%;
+    img {
+        height: 25vh;
+        margin-right: 1vh;
+        object-fit: scale-down;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+
+        p:nth-child(1) {
+            font-size: small;
+        }
+        p:nth-child(2) {
+            font-weight: bold;
+        }
+        p:nth-child(3) {
+            font-size: large;
+        }
+    }
+}
+
+.darkener {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: #00000077;
+    transition: all 200ms ease-in-out;
+}
+.coolModal {
+    padding: 4vh;
+    text-align: center;
+    background-color: $def-bg-color;
+    z-index: 3;
+    position: fixed;
+    top: -100vh;
+    left: 20vw;
+    width: 60vw;
+    transition: all 400ms ease-in-out;
+    &.load {
+        top: 10vh;
+    }
+    button {
+        width: 80%;
+    }
+}
+
+#id1337 .row {
+    margin-bottom: 2vh;
+}
+
+#detailedImage {
+    height: 50vh;
+}
+
+#modalInfo {
+    margin-bottom: 2vh;
+}

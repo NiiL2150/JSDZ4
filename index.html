@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    </head>
+    <body>
+        <div id="darkener" class="darkener hidden"></div>
+        <div id="coolModal" class="coolModal hidden">
+            <h1 id="modalResponse">Film info:</h1>
+            <div id="modalInfo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img id="detailedImage" src="" />
+                        </div>
+                        <div class="col-8">
+                            <div id="id1337" class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3">Title:</div>
+                                    <div id="ftitle" class="col-9"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">Released:</div>
+                                    <div id="frelease" class="col-9"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">Genre:</div>
+                                    <div id="fgenre" class="col-9"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">Country:</div>
+                                    <div id="fcountry" class="col-9"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">Director:</div>
+                                    <div id="fdirector" class="col-9"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">Writer:</div>
+                                    <div id="fwriter" class="col-9"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">Actors:</div>
+                                    <div id="factors" class="col-9"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">Awards:</div>
+                                    <div id="fawards" class="col-9"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="toggleModal()">Close</button>
+        </div>
+
+        <form action="">
+            <input name="movieTitle" id="movieTitle" />
+            <button name="sendQuery" id="sendQuery">Search</button>
+        </form>
+
+        <div id="load">Loading...</div>
+
+        <div id="movieContainer" class="container">
+            <div
+                id="movieList"
+                class="row row-cols-1 row-cols-sm-2 row-cols-md-3"
+            ></div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
